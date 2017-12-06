@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{websiteTitle}}</title>
+
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<!-- font-awesome CSS -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- slick-theme.css -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+
+		<!-- slick-theme.css -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		{{> header}}
+
+		<div class="container-fluid sliderProduct-container">
+			<div class="row sliderProduct">
+				<div class="col-sm-8">
+					<section class="clients-logos-container">
+						<div class="Snews-slider">
+							<div class="slide">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
+									<div class="back-image" style="background-image: url(images/1_76_237.1512022547.jpg);"></div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
+									<div class="back-image" style="background-image: url(images/1_91_174.jpg);"></div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
+									<div class="back-image" style="background-image: url(images/1_93_196.1512022547.jpg);"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="col-sm-4 header-text">
+					<h2>Long Sleeve Brushed Check Shirt</h2>
+					<p>Product code: MSDA123321</p><br><br>
+					<p class="red">40% Off Menswear!*</p>
+					<span class="hinzir">Price: <del>$130</del> $79.99 </span><br><br><br><br>
+					<button type="button" class="btn btn-outline-dark">ADD TO BAG</button>
+				</div>
+			</div>
+			<!-- <div class="row header-img">
+				<div class=" col-sm-4"> -->
+					<!-- <img src="images/mzz65245_black_xl.jpg" class="img-thumbnail"> -->
+					<!-- <video width="520" height="705" autoplay loop muted>
+					  <source src="https://b24c55b04577edcff120-ee732677a7df0f7e6b24d56d54ebab21.ssl.cf4.rackcdn.com/*ShootVideo/2017/11_November/21%20Issy/Tie%20Front%20Blouse%20Black.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video> -->
+					<!-- <video src="https://b24c55b04577edcff120-ee732677a7df0f7e6b24d56d54ebab21.ssl.cf4.rackcdn.com/*ShootVideo/2017/08_August/29_08_Issy/Green%20Sloan%20Denim%20Overalls%20%20Green.mp4" autoplay loop muted></video> -->
+				<!-- </div>
+			</div> -->
+		</div>
+
+		<!-- Footer -->
+		{{> footer}}
+
+		<!-- Scripts -->
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+		<!-- Bootstarp Script -->
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+		<!-- Slick JS -->
+		<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+		<script type="text/javascript">
+			//News Slider
+			$('.Snews-slider').slick({
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				autoplay: false,
+				autoplaySpeed: 3000,
+				arrows: true,
+				dots: true,
+				pauseOnHover: false,
+				responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}},
+				{
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 1
+				},
+				breakpoint: 375,
+				settings: {
+					slidesToShow: 1
+				}
+				}]
+			});
+		</script>
+
+		<!-- Custom Script -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
