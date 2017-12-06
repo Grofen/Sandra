@@ -9,6 +9,8 @@ body {
   background-size: cover;
 }
 
+/* Navbar
+======================================== */
 .nav-wraper .dropdown-toggle::after {
   display: none;
 }
@@ -43,7 +45,32 @@ body {
   border: none;
   border-radius: 0;
 }
-
+.position-none {
+  position: static!important;
+}
+.nav-wraper .dropdown-menu {
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.nav-wraper .img-list {
+  height: 500px;
+}
+.nav-wraper .menu-col {
+  padding: 0;
+}
+.nav-wraper .dropdown-item {
+  padding: 1rem 1.5rem;
+}
+.menu-row {
+  margin: 0;
+}
+.nav-wraper .dropdown-item.active, .dropdown-item:active {
+  background-color: transparent;
+  color: #000;
+}
 
 /* Slider
 ===================================== */
@@ -383,4 +410,62 @@ a.icoInstagram:hover {
 }
 .slick-dots {
   bottom: -40px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 70px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 425px) {
+  .nav-wraper .nav-item {
+    margin: 0;
+  }
+  .menu-links {
+    padding: 5px 0;
+  }
+  .features-section {
+    background-position: 30% 100%;
+  }
+  .nav-wraper .search-btn {
+    text-align: left;
+  }
+  .nav-wraper .navbar-dark .navbar-nav .nav-link {
+    padding: 1rem 0rem;
+  }
+  .instashopSection .instaImg {
+    margin-bottom: 10px;
+  }
+  .shopHomeItems .item:first-child, .shopHomeItems .item:nth-child(2) {
+    padding-right: 15px;
+  }
+  .shopHomeItems .shop-img {
+    margin-bottom: 15px;
+  }
+  .narivals-section .item:first-child {
+    padding-right: 15px;
+  }
+  .arivals-img.first {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+
 }
