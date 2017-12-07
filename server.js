@@ -102,6 +102,14 @@ app.get('/product', (req, res) => {
   res.render('products.hbs');
 });
 
+app.get('/about', (req, res) => {
+  res.render('about.hbs');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs');
+});
+
 app.listen(port, () => {
   console.log(`App is up on port: ${port}`);
 });

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{websiteTitle}}</title>
+
+    <!-- Stylesheets -->
+    {{> stylesheets}}
+  </head>
+  <body>
+    {{> header}}
+
+    <br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="text-center"><em><strong>For commissions, collaborations, advertising opportunities on the site, or just to get in touch…
+      Please email:</strong></em></p>
+          <p class="text-center"><strong>aleksandra.markoska@cse.uist.edu.mk</strong></p>
+          <p class="text-center"><big>Say hello!</big></p>
+          <form>
+            <div class="form-group">
+              <label for="name" ><strong><em>Name</em></strong></label>
+                <input type="text" class="form-control"></div>
+
+            <div class="form-group">
+              <label for="lastname"><strong><em>Email *</em></strong></label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="subject"><strong><em>Subject</em></strong></label>
+                <input type="text" class="form-control">
+              </div>
+
+            <div class="form-group">
+              <label for="message"><strong><em>Message</em></strong></label>
+                <textarea class="form-control" rows="5" ></textarea>
+            </div>
+
+            <div class="form-actions">
+               <button type="submit" class="btn btn-default btn-primary-outline"><strong><em>Submit</em></strong></button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+
+
+    <!-- Footer -->
+    {{> footer}}
+
+    <!-- Scripts -->
+    {{> scripts}}
+  </body>
+</html>

@@ -4,9 +4,23 @@
 		<meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/icon.png">
+		<title>{{websiteTitle}}</title>
 
-		<!-- Stylesheets -->
-		{{> stylesheets}}
+		<!-- Bootstrap Css -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<!-- font-awesome CSS -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- slick-theme.css -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+
+		<!-- slick-theme.css -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
@@ -55,12 +69,10 @@
 
 				<p class="josefin text-center"><em> How would a professional makeup artist who’s worked on everyone from Daphne Groeneveld to Lauren Santo Domingo to Stella Maxwell approach everyday makeup? </em> </p>
 
-				<img class="img-responsive center-block" src="images/logo.jpg" alt="logo"> <br>
+				<br>
 				<p class="text-center"> Laura Mercier Tinted Moisturizer / YSL’s Touche Éclat / M.A.C Pro concealer / Laura Mercier Eye Basics in Flax / Mascara </p><br><br>
 				<div class="text-center"><a href="/beauty1" class="btn btn-outline-dark">Read more</a></div>
-				<br><br><br><br><br><br><br><hr>
-
-				<img class="img-responsive center-block" src="images/whats.jpg" alt="life">
+				<br><br><br><br><br><br><br>
 				<br>
 				<div class="row">
 			    <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6">
@@ -87,6 +99,30 @@
 
 				<br><br><br><br><br><br><br>
 			</div>
+
+			<div class="row sliderProduct">
+				<div class="col-sm-12">
+					<section class="clients-logos-container">
+						<div class="beauty">
+							<div class="slide">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
+									<div class="back-image" style="background-image: url(images/makeups.jpg);"></div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
+									<div class="back-image" style="background-image: url(images/makeups1.jpg);"></div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item">
+									<div class="back-image" style="background-image: url(images/makeups2.jpg);"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -95,7 +131,48 @@
 
 	<!-- Scripts
 	============================ -->
-	{{> scripts}}
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+	<!-- Bootstarp Script -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<!-- Slick JS -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+		//News Slider
+		$('.beauty').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: false,
+			autoplaySpeed: 3000,
+			arrows: true,
+			dots: true,
+			pauseOnHover: false,
+			responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+			}},
+			{
+			breakpoint: 520,
+			settings: {
+				slidesToShow: 1
+			},
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1
+			}
+			}]
+		});
+	</script>
+
+	<!-- Custom Script -->
+	<script type="text/javascript" src="js/script.js"></script>
 
 	</body>
 </html>
